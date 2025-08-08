@@ -73,7 +73,7 @@ public class UserReposService {
             return result;
 
         } catch (HttpClientErrorException.NotFound e) {
-            throw new UserNotFoundException("User " + username + " not found");
+            throw new UserNotFoundException("GitHub user not found");
         }
     }
 }
